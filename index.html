@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css3/arquivo.css">
+    <style>
+        </style>
+        </head>
+        <body>
+
+        <h1>Software de vendas de relogio </h1>
+
+        <form method="get" action="" >
+        <fieldset>
+   
+        
+           <p>
+            <label for="cnom">Nome</label> 
+         <input type="text" name="" id="cnom" placeholder="Seu nome completo"  class="al"> 
+
+           <label for="ccod">Código</label>   
+         <input type="number" name="" id="ccod" placeholder="Crie um codigo"  class="al" re>
+                   
+        
+         </p>
+      
+
+      
+       <p> <strong>Sexo:</strong> </p>
+       
+        <input type="radio" name="tsex" id="cmasc" checked> 
+        <label for="cmasc">Masculino</label><br>
+
+        <input type="radio" name="tsex" id="cfem"> 
+        <label for="cfem">Femenino</label>
+<p> 
+  <label for="Anum">Data de nascimento</label>
+        <input type="date" name="" id="Anum"  > 
+       
+        </p>
+
+         </fieldset>
+         
+        <fieldset>
+        <legend style="font-size:1.2em; ">Localização </legend>
+
+
+        <ul id="conteiner">
+      
+        <li>
+       
+        </li>
+        
+        
+        <li  >
+            <label for="fprovi"  class="efeitolabel ">Provincia</label>
+          <input type="text" name="" id="fprovi" placeholder="" class="al" class="efeitoinput" required> 
+      
+       
+         </li>
+        
+        <li>
+          <label for="fmuni" class="efeitolabel " >Municipio</label>
+         <input type="text" name="" id="fmuni" placeholder="" class="al" class="efeitoinput" required> 
+        
+        
+         </li>
+        
+        <li>
+            <label for="fbairro" class="efeitolabel " >Bairro</label>
+          <input type="text" name="" id="fbairro" placeholder="" class="al" class="efeitoinput" required> 
+        
+         </li>
+        
+        
+        <li> 
+           <label for="fRua" class="efeitolabel ">Rua</label>
+             <input type="text" name="" id="frua" Nome da sua rua placeholder="" class="al" class="efeitoinput" required> 
+      
+    
+         </li>
+        
+        
+        
+         <li>
+             <label for="fNumcasa" class="efeitolabel ">Casa Nº</label> 
+           <input type="number" name="" id="fNumcasa" size="18" placeholder="Número da sua casa" class="al" class="efeitoinput " required> 
+      
+       
+         </li>
+        <li>
+           <label for="femail" class="efeitolabel ">E-mail</label>
+            <input type="email" name="" id="femail"  maxlength="40" placeholder="" size="20"class="al" class="efeitoinput" required> 
+       
+     
+         </li>
+         
+        <li>
+   <label for="ftel1">Telefone1</label>
+         <input type="number" name="" id="ftel1" placeholder=" " class="al" class="efeitoinput" required> 
+     
+        
+         </li>
+         
+         <li>
+                <label for="ftel2">Telefone2</label>
+           <input type="number" name="" id="ftel2" placeholder="" class="al" class="efeitoinput" required> 
+   
+       
+         </li>
+       
+          </ul>
+
+         </fieldset>
+        
+         
+        <fieldset  style="padding: 5px; margin-top: 8px;">
+        <ul id="b">
+          <li>
+        <input type="button" value="Novo"   class="botoes" >
+        <input type="submit" value="Guardar" class="botoes" onclick="gvalid()">
+        <input type="submit" value="Limpar"  class="botoes">
+        <input type="submit" value="Editar"  class="botoes">
+        <input type="submit" value="Excluiir" class="botoes">
+        </li>
+         </ul>
+          </fieldset>
+
+
+
+      <ul>
+           <li>
+              <input  type="search" name="" id="fpsq" size="40" placeholder="Pesquisar"  >
+              <input type="submit" value=Pesquisar id="bpsq" > 
+            </li>
+        </ul>
+
+
+       
+        </form>
+
+     
+           
+       </body>
+       </html>
