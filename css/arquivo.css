@@ -22,6 +22,8 @@ font:normal bolder 1em 'Courier New', Courier, monospace;
 color:var(--cor1);
 border-radius: 0px 0px 10px 10px;
 border: none;
+min-width:320px;
+max-width:800px ;
     }
   
    
