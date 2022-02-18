@@ -12,7 +12,7 @@
 form{
     border:1px solid black;
     padding:10px;
-    width:520px;
+  
     margin:auto;
 
     background:white;
@@ -23,8 +23,8 @@ font:normal bolder 1em 'Courier New', Courier, monospace;
 color:var(--cor1);
 border-radius: 0px 0px 10px 10px;
 border: none;
-
-
+ min-width: 320px;
+ max-width:520px;
 
 
     }
@@ -55,13 +55,14 @@ border: none;
     text-align:center;
     color:#ffffff;
 background-color: var(--cor3);
-    width:520px;
+  
     padding:10px;
     margin: auto;
     font-size:2em;
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
-
+  min-width: 320px;
+  max-width:520px;
 
   }
 
