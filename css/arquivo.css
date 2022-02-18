@@ -14,6 +14,7 @@ form{
     padding:10px;
     width:520px;
     margin:auto;
+
     background:white;
     border-radius:2px;
     border-style:none;
@@ -22,14 +23,18 @@ font:normal bolder 1em 'Courier New', Courier, monospace;
 color:var(--cor1);
 border-radius: 0px 0px 10px 10px;
 border: none;
-min-width:320px;
-max-width:800px ;
+
+
+
+
     }
   
    
     body{
     /* background:hsla(214, 38%, 12%, 0.993); */
     background-image:linear-gradient(to right,#06080D,#141A26,#1D4259,#022840,#06080D );
+
+    
 
     }
 
@@ -56,8 +61,7 @@ background-color: var(--cor3);
     font-size:2em;
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
-  min-width:320px;
-max-width:800px ;
+
 
   }
 
