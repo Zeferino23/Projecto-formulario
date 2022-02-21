@@ -12,29 +12,35 @@
         <body>
 
         <h1>Software de vendas de relogio </h1>
-
+  
         <form method="get" action="" >
         <fieldset>
    
+        <ul  class="conteiner">
+
+       <li class="caixas">
         
-           <p>
-            <label for="cnom">Nome</label> 
+            <label for="cnom" class="efeitolabel">Nome</label> 
          <input type="text" name="" id="cnom" placeholder="Seu nome completo"  class="al"> 
-  </p>
-           <label for="ccod">Código</label>   
-         <input type="number" name="" id="ccod" placeholder="Crie um codigo"  class="al" re>
-                
+       </li>
+
+<li class="caixas">
+           <label for="ccod" class="efeitolabel">Código</label>   
+         <input type="password" name="" id="ccod" placeholder="Crie um codigo"  class="al" re>
+            </li>
+           </ul>
+                 
         
-       
+         
       
 
       
-       <p> <strong>Sexo:</strong> </p>
+       <p><strong>Sexo:</strong> </p>
        
-        <input type="radio" name="tsex" id="cmasc" checked> 
+        <input type="radio" name="tsex" id="cmasc" checked required> 
         <label for="cmasc">Masculino</label><br>
 
-        <input type="radio" name="tsex" id="cfem"> 
+        <input type="radio" name="tsex" id="cfem" required> 
         <label for="cfem">Femenino</label>
 <p> 
   <label for="Anum">Data de nascimento</label>
@@ -48,66 +54,86 @@
         <legend style="font-size:1.2em; ">Localização </legend>
 
 
-        <ul id="conteiner">
+        <ul class="conteiner">
       
         <li>
        
         </li>
         
         
-        <li  >
-            <label for="fprovi"  class="efeitolabel ">Provincia</label>
-          <input type="text" name="" id="fprovi" placeholder="" class="al" class="efeitoinput" required> 
+        <li class="caixas" >
       
-       
-         </li>
+            <label for="fprovi" class="efeitolabel ">Provincia</label>
+            <input type="text" name="prov" id="fprovi" placeholder="Sua provincia" list="provincias"   class="al"  class="efeitoinput" >
+            <datalist id="provincias">
+<option value="Bengo"></option>
+<option value="Benguela"></option>
+<option value="Namibe"></option>
+<option value="Bie"></option>
+<option value="Cabinda"></option>
+<option value="cuando cubango"></option>
+<option value="Cunene"></option>
+<option value="Huanmbo"></option>
+<option value="Huila"></option>
+<option value="Kwanza-Sul"></option>
+<option value="Kwanza-notre"></option>
+<option value="Luanda"></option>
+<option value="Luanda"></option>
+<option value="Lunda-Norte"></option>
+<option value="Lunda-Sul"></option>
+<option value="Malanje"></option>
+<option value="Namibe"></option>
+<option value="Uige"></option>
+<option value="Zaire"></option>
+            </datalist>
+  </li>
         
-        <li>
+        <li class="caixas">
+
+          
           <label for="fmuni" class="efeitolabel " >Municipio</label>
-         <input type="text" name="" id="fmuni" placeholder="" class="al" class="efeitoinput" required> 
+             <input type="text" name="" id="fmuni" placeholder="Seu Municipio" class="al" class="efeitoinput" required>    
+               </li>
         
-        
-         </li>
-        
-        <li>
-            <label for="fbairro" class="efeitolabel " >Bairro</label>
-          <input type="text" name="" id="fbairro" placeholder="" class="al" class="efeitoinput" required> 
+        <li class="caixas">
+            <label for="fbairro" class="efeitolabel" >Bairro</label>
+          <input type="text" name="" id="fbairro" placeholder="Seu bairro" class="al" class="efeitoinput" required > 
         
          </li>
         
         
-        <li> 
+        <li class="caixas"> 
            <label for="fRua" class="efeitolabel ">Rua</label>
-             <input type="text" name="" id="frua" Nome da sua rua placeholder="" class="al" class="efeitoinput" required> 
+             <input type="text" name="" id="frua" Nome da sua rua placeholder="Sua rua" class="al" class="efeitoinput" required> 
       
     
          </li>
         
         
         
-         <li>
+         <li class="caixas">
              <label for="fNumcasa" class="efeitolabel ">Casa Nº</label> 
-           <input type="number" name="" id="fNumcasa" size="18" placeholder="Número da sua casa" class="al" class="efeitoinput " required> 
+           <input type="number" name="" id="fNumcasa" size="18" placeholder="Numero da sua casa" class="al" class="efeitoinput " required> 
       
        
          </li>
         <li>
            <label for="femail" class="efeitolabel ">E-mail</label>
-            <input type="email" name="" id="femail"  maxlength="40" placeholder="" size="20"class="al" class="efeitoinput" required> 
+            <input type="email" name="" id="femail"  maxlength="40" placeholder="Ex:zeferino@gmail.com" size="20"class="al" class="efeitoinput" required> 
        
      
          </li>
          
-        <li>
-   <label for="ftel1">Telefone1</label>
-         <input type="number" name="" id="ftel1" placeholder=" " class="al" class="efeitoinput" required> 
+        <li class="caixas">
+   <label for="ftel1" class="efeitolabel">Telefone1</label>
+         <input type="number" name="" id="ftel1" placeholder="Primeiro numero de telefone " class="al" class="efeitoinput" required> 
      
         
          </li>
          
-         <li>
-                <label for="ftel2">Telefone2</label>
-           <input type="number" name="" id="ftel2" placeholder="" class="al" class="efeitoinput" required> 
+         <li class="caixas">
+                <label for="ftel2" class="efeitolabel">Telefone2</label>
+           <input type="number" name="" id="ftel2" placeholder="Este campo é opcional" class="al" class="efeitoinput" required> 
    
        
          </li>
@@ -117,32 +143,36 @@
          </fieldset>
         
          
-        <fieldset  style="padding: 5px; margin-top: 8px;">
-        <ul id="b">
-          <li>
-        <input type="button" value="Novo"   class="botoes" >
-        <input type="submit" value="Guardar" class="botoes" onclick="gvalid()">
-        <input type="submit" value="Limpar"  class="botoes">
-        <input type="submit" value="Editar"  class="botoes">
-        <input type="submit" value="Excluiir" class="botoes">
-        </li>
-         </ul>
+        <fieldset   >
+<ul class="botoes" >
+<li  >       
+ <button type="submit"  class="botoesclick" >Novo</button>
+ <button type="submit" class="botoesclick">Guardar</button>
+ <button type="submit" class="botoesclick">Editar</button>
+ <button type="submit" class="botoesclick">Limpar</button>
+ <button type="submit" class="botoesclick">Excluir</button>
+ <button type="submit" class="botoesclick">Consultar</button>
+
+ 
+
+</li>
+</ul>
           </fieldset>
 
 
 
       <ul>
            <li>
-              <input  type="search" name="" id="fpsq" size="40" placeholder="Pesquisar"  >
-              <input type="submit" value=Pesquisar id="bpsq" > 
+              <input  type="search" name="" id="fpsq" size="30" placeholder="Pesquisar"  >
+              <button type="submit"  >Consultar</button>
             </li>
         </ul>
 
 
-       
+        <p style="text-align:right;">Avançar</p>
         </form>
 
-     
+    
            
        </body>
        </html>
